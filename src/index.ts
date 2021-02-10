@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 
 import { LoggerFactory } from './adapters/logger/factory'
+import { podcastsRoute } from './routes/podcasts/podcasts.route'
 import { errorController } from './controllers/podcasts/errors/error.controller'
 
 const port = process.env.PORT || 3100
@@ -14,6 +15,8 @@ app.use(cors())
 app.get('/', (_req, res) => {
   res.send('Hello World! 🚀')
 })
+
+app.use('/podcasts', podcastsRoute())
 
 app.use(errorController(logger))
 
