@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es2017",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "removeComments": true,
+  }
+}
