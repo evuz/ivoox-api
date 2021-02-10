@@ -4,9 +4,9 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "run-s build serve",
+    "start": "node ./dist/index.js",
     "dev": "node ./scripts/dev.js",
-    "serve": "node ./dist/index.js",
+    "serve": "run-s build start",
     "build": "node ./scripts/build.js"
   },
   "dependencies": {
