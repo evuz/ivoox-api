@@ -12,11 +12,11 @@ export function createLogger (context) {
   }
 
   function error (text) {
-    console.error(chalk.red(createText(text)))
+    console.log(chalk.red(createText(text)))
   }
 
   function info (text) {
-    console.info(chalk.yellow(createText(text)))
+    console.log(chalk.yellow(createText(text)))
   }
 
   return { log, error, info }
